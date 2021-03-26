@@ -1,17 +1,18 @@
 // 1 STEP
-const kelvin = 293;
-
-let celsius = kelvin - 273;
-
-let fahrenheit = celsius * (9/5) + 32;
 
 function kelvinToFahrenheit(kelvin) {
+    //const kelvin = 293;
+
+    let celsius = kelvin - 273;
+
+    let fahrenheit = celsius * (9/5) + 32;
+    
     return `The temperature in Fahrenheit will be ${Math.floor(fahrenheit)}`;
 }
 
-kelvinToFahrenheit();
+//kelvinToFahrenheit();
 
-//console.log(kelvinToFahrenheit());
+console.log(kelvinToFahrenheit(293));
 
 
 // 2 STEP
@@ -27,26 +28,30 @@ let numberDogYears = laterYears * 4;
 let myAgeInDogYears = earlyYears + laterYears;
 
 function humanAgeInDogYears(myAge) {
+    let earlyYears = 2 * 10.5;
+
+    let laterYears = myAge / 2; 
+
+    let numberDogYears = laterYears * 4;
+
+    let myAgeInDogYears = earlyYears + laterYears;
+
     return `Human age in dog years is ${earlyYears + laterYears}!`;
 }
 
-humanAgeInDogYears();
+//humanAgeInDogYears();
 
-//console.log(humanAgeInDogYears());
+console.log(humanAgeInDogYears(36));
 
 // 3 STEP
 
-let userName = '';
-
-(userName === '') ? console.log('Hello!') : console.log(`Hello, ${userName}!`);
-
-let userQuestion = 'Will I visite Grecee this year?';
-
-let randomNumber = Math.floor(Math.random()*8);
-
-let eightBall = '';
-
 function answerMyQuestion(userName, userQuestion) {
+    (userName === '') ? console.log('Hello!') : console.log(`Hello, ${userName}!`);
+
+    let randomNumber = Math.floor(Math.random()*8);
+
+    let eightBall = '';
+
     switch (randomNumber) {
         case 0:
             console.log('Only if you"ll be vaccinated!');
@@ -91,17 +96,17 @@ function answerMyQuestion(userName, userQuestion) {
     return eightBall;
 }
 
-answerMyQuestion();
+//answerMyQuestion();
 
-//console.log(answerMyQuestion());
+console.log(answerMyQuestion('Tatiana','Will I visite Grecee this year?'));
 
 // 4 STEP
 
 //let raceNumber = (Math.random()*1001); 
 
-let registeredEarly = true;
+//let registeredEarly = true;
  
-let userAge = 19; 
+//let userAge = 19; 
 
 function raceTime(userAge, registeredEarly) {
     
@@ -124,9 +129,8 @@ function raceTime(userAge, registeredEarly) {
     else {
         return 'Please wait!';
     }
-    //return raceTime;
 }
 
-raceTime();
+//raceTime();
 
-//console.log(raceTime());
+console.log(raceTime(18, true));
